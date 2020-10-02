@@ -39,7 +39,7 @@ module ActiveRecord
           case where.right
           when Array then where.right.map(&:val)
           else
-            where.right.val
+            where.right&.val
           end
         }]
       }]
